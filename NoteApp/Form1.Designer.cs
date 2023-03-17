@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.AddItemButton = new System.Windows.Forms.Button();
             this.noteBodyLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             this.AddItemButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.AddItemButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddItemButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AddItemButton.Location = new System.Drawing.Point(174, 321);
+            this.AddItemButton.Location = new System.Drawing.Point(188, 323);
             this.AddItemButton.Name = "AddItemButton";
             this.AddItemButton.Size = new System.Drawing.Size(108, 47);
             this.AddItemButton.TabIndex = 0;
@@ -56,7 +57,8 @@
             // noteBodyLabel
             // 
             this.noteBodyLabel.AutoSize = true;
-            this.noteBodyLabel.Location = new System.Drawing.Point(29, 88);
+            this.noteBodyLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.noteBodyLabel.Location = new System.Drawing.Point(53, 88);
             this.noteBodyLabel.Name = "noteBodyLabel";
             this.noteBodyLabel.Size = new System.Drawing.Size(125, 16);
             this.noteBodyLabel.TabIndex = 3;
@@ -66,7 +68,8 @@
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Location = new System.Drawing.Point(29, 34);
+            this.titleLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.titleLabel.Location = new System.Drawing.Point(53, 34);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(36, 16);
             this.titleLabel.TabIndex = 4;
@@ -74,7 +77,7 @@
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(32, 53);
+            this.titleTextBox.Location = new System.Drawing.Point(56, 53);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(206, 22);
             this.titleTextBox.TabIndex = 5;
@@ -87,13 +90,13 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(375, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(395, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 239);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 250);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -102,9 +105,9 @@
             this.readItemButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.readItemButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.readItemButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.readItemButton.Location = new System.Drawing.Point(375, 312);
+            this.readItemButton.Location = new System.Drawing.Point(395, 322);
             this.readItemButton.Name = "readItemButton";
-            this.readItemButton.Size = new System.Drawing.Size(116, 47);
+            this.readItemButton.Size = new System.Drawing.Size(116, 46);
             this.readItemButton.TabIndex = 7;
             this.readItemButton.Text = "Read Item";
             this.readItemButton.UseVisualStyleBackColor = false;
@@ -114,7 +117,7 @@
             // 
             this.deleteButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.deleteButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.deleteButton.Location = new System.Drawing.Point(535, 312);
+            this.deleteButton.Location = new System.Drawing.Point(522, 323);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(113, 45);
             this.deleteButton.TabIndex = 8;
@@ -124,7 +127,7 @@
             // 
             // textBoxNote
             // 
-            this.textBoxNote.Location = new System.Drawing.Point(32, 107);
+            this.textBoxNote.Location = new System.Drawing.Point(56, 107);
             this.textBoxNote.Multiline = true;
             this.textBoxNote.Name = "textBoxNote";
             this.textBoxNote.Size = new System.Drawing.Size(240, 196);
@@ -134,7 +137,7 @@
             // 
             this.newItemButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.newItemButton.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.newItemButton.Location = new System.Drawing.Point(32, 321);
+            this.newItemButton.Location = new System.Drawing.Point(56, 322);
             this.newItemButton.Name = "newItemButton";
             this.newItemButton.Size = new System.Drawing.Size(103, 47);
             this.newItemButton.TabIndex = 10;
@@ -146,7 +149,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 567);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(691, 405);
             this.Controls.Add(this.newItemButton);
             this.Controls.Add(this.textBoxNote);
             this.Controls.Add(this.deleteButton);
@@ -156,6 +160,7 @@
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.noteBodyLabel);
             this.Controls.Add(this.AddItemButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "NoteApplication";
             this.Load += new System.EventHandler(this.Form1_Load);

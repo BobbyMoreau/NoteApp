@@ -24,6 +24,9 @@ namespace NoteApp
             dt.Columns.Add("Title", typeof(string));
             dt.Columns.Add("Note", typeof(string));
             dataGridView1.DataSource = dt;
+
+            dataGridView1.Columns["Note"].Visible = false;
+            dataGridView1.Columns["Title"].Width = 200;
         }
 
         private void button1_Click(object sender, EventArgs e)
